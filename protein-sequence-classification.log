@@ -1,0 +1,795 @@
+Data size:
+
+Train size : 1086741
+
+Val size : 126171
+
+Test size : 126171
+
+Total number of unique protein families: 17929
+
+Number of occurences of the protein families:
+
+PF13649.6     4545
+
+PF00560.33    2407
+
+PF13508.7     2199
+
+PF06580.13    1921
+
+PF02397.16    1908
+
+              ... 
+
+PF17861.1        1
+
+PF12601.8        1
+
+PF17997.1        1
+
+PF01567.16       1
+
+PF17577.2        1
+
+Name: family_accession, Length: 17929, dtype: int64
+
+The partial data set has 334045 instances.
+
+Number of unique protein families in the partial data set: 429
+
+Sequence length ranges from 12 to 1182.
+
+The median is 113.
+
+Dictionary: {'A': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'K': 9, 'L': 10, 'M': 11, 'N': 12, 'P': 13, 'Q': 14, 'R': 15, 'S': 16, 'T': 17, 'V': 18, 'W': 19, 'Y': 20}
+
+Amino acid sequence: KDSTTIDTIRVKYLGKKGELTTILRGMGSLSKEERPIVGKLANEVREVLEAELEAITKAVKEAEKQEKL
+
+Vectorized sequence: [9, 3, 16, 17, 17, 8, 3, 17, 8, 15, 18, 9, 20, 10, 6, 9, 9, 6, 4, 10, 17, 17, 8, 10, 15, 6, 11, 6, 16, 10, 16, 9, 4, 4, 15, 13, 8, 18, 6, 9, 10, 1, 12, 4, 18, 15, 4, 18, 10, 4, 1, 4, 10, 4, 1, 8, 17, 9, 1, 18, 9, 4, 1, 4, 9, 14, 4, 9, 10]
+
+Padded sequence: [ 9  3 16 17 17  8  3 17  8 15 18  9 20 10  6  9  9  6  4 10 17 17  8 10
+
+ 15  6 11  6 16 10 16  9  4  4 15 13  8 18  6  9 10  1 12  4 18 15  4 18
+
+ 10  4  1  4 10  4  1  8 17  9  1 18  9  4  1  4  9 14  4  9 10  0  0  0
+
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+
+  0  0  0  0]
+
+Train size: 270576
+
+Val size: 30064
+
+Test size: 33405
+
+Validation accuracy: 0.7146420968600319, f1-score:0.7006244361094737
+
+Test accuracy: 0.7159706630743901, f1-score:0.698655431697123
+
+2020-12-27 18:18:54.617441: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2250000000 Hz
+
+2020-12-27 18:18:54.617773: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ab11308710 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+
+2020-12-27 18:18:54.617802: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+
+Model: "sequential"
+
+_________________________________________________________________
+
+Layer (type)                 Output Shape              Param #   
+
+=================================================================
+
+embedding (Embedding)        (None, 100, 8)            176       
+
+_________________________________________________________________
+
+flatten (Flatten)            (None, 800)               0         
+
+_________________________________________________________________
+
+dense (Dense)                (None, 429)               343629    
+
+=================================================================
+
+Total params: 343,805
+
+Trainable params: 343,805
+
+Non-trainable params: 0
+
+_________________________________________________________________
+
+
+
+Epoch: 0
+
+Training loss (for one batch) at step 50: 5.4002
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 3.8475
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 2.1567
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 1.1510
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.9264
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.6045
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.6197
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.4515
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.3687
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.3048
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 1
+
+Training loss (for one batch) at step 50: 0.2735
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.2139
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.1778
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.1649
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.1541
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.1723
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.1821
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.1524
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.1473
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.1308
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 2
+
+Training loss (for one batch) at step 50: 0.0954
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0868
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0855
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0736
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0789
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0957
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0484
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0489
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.1029
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0312
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 3
+
+Training loss (for one batch) at step 50: 0.0354
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0437
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0282
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0386
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0387
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0498
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0617
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0266
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0178
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0270
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 4
+
+Training loss (for one batch) at step 50: 0.0215
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0343
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0352
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0150
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0200
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0127
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0167
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0322
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0105
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0337
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 5
+
+Training loss (for one batch) at step 50: 0.0118
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0127
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0071
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0136
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0119
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0063
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0106
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0066
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0159
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0160
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 6
+
+Training loss (for one batch) at step 50: 0.0043
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0054
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0039
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0065
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0053
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0052
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0051
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0048
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0066
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0091
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 7
+
+Training loss (for one batch) at step 50: 0.0030
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0047
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0040
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0037
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0025
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0028
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0028
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0028
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0030
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0044
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 8
+
+Training loss (for one batch) at step 50: 0.0021
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0020
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0026
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0020
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0021
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0018
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0023
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0026
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0019
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0021
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 9
+
+Training loss (for one batch) at step 50: 0.0013
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0019
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0015
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0016
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0013
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0016
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0018
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0030
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0023
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0013
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 10
+
+Training loss (for one batch) at step 50: 0.0012
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0013
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0010
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0011
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0014
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0010
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0013
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0008
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0012
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0010
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 11
+
+Training loss (for one batch) at step 50: 0.0007
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0011
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0011
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0011
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0008
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0011
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0008
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0006
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0008
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0010
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 12
+
+Training loss (for one batch) at step 50: 0.0006
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0005
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0012
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0005
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0005
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0005
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0008
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0007
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0004
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0004
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 13
+
+Training loss (for one batch) at step 50: 0.0004
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0004
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0003
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0011
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0004
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0022
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0005
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0005
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0007
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0004
+
+Seen so far: 256000 samples
+
+
+
+Epoch: 14
+
+Training loss (for one batch) at step 50: 0.0003
+
+Seen so far: 25600 samples
+
+Training loss (for one batch) at step 100: 0.0003
+
+Seen so far: 51200 samples
+
+Training loss (for one batch) at step 150: 0.0003
+
+Seen so far: 76800 samples
+
+Training loss (for one batch) at step 200: 0.0002
+
+Seen so far: 102400 samples
+
+Training loss (for one batch) at step 250: 0.0004
+
+Seen so far: 128000 samples
+
+Training loss (for one batch) at step 300: 0.0007
+
+Seen so far: 153600 samples
+
+Training loss (for one batch) at step 350: 0.0005
+
+Seen so far: 179200 samples
+
+Training loss (for one batch) at step 400: 0.0003
+
+Seen so far: 204800 samples
+
+Training loss (for one batch) at step 450: 0.0003
+
+Seen so far: 230400 samples
+
+Training loss (for one batch) at step 500: 0.0002
+
+Seen so far: 256000 samples
+
+Test loss: 0.07148031145334244, Test accuracy: 0.9857506155967712
+
+Test results
+
+Accuracy: 0.985751
+
+Precision: 0.984994
+
+Recall: 0.984207
+
+F1 score: 0.984452
+
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+
+[NbConvertApp] Writing 125040 bytes to __notebook__.ipynb
+
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+
+[NbConvertApp] Support files will be in __results___files/
+
+[NbConvertApp] Making directory __results___files
+
+[NbConvertApp] Making directory __results___files
+
+[NbConvertApp] Making directory __results___files
+
+[NbConvertApp] Making directory __results___files
+
+[NbConvertApp] Making directory __results___files
+
+[NbConvertApp] Writing 361705 bytes to __results__.html
