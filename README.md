@@ -8,8 +8,7 @@ Python packages: Numpy, Pandas, Matplotlib, Sklearn, Keras<br>
 
 ## Data preprocessing and EDA
 
-The Pfam database has 17929 protein families. Due to severe class imbalance, I focused on the protein families with more than 500 instances. This partial dataset has 429 unique protein families and 334045 instances. <br>
-In the database, amino acids are encoded with a single alphabet. Below are a few figures describing the amino acid sequences whose protein families I wish to predict.
+The Pfam database has 17929 protein families. Due to severe class imbalance, I focused on the protein families with more than 500 instances. This partial dataset has 429 unique protein families. Amino acids are encoded with a single alphabet. Below are a few figures describing the amino acid sequences whose protein families I wish to predict.
 
 ![amino acids](img/amino-acids.png)
 ![sequence length](img/sequence-length.png)
@@ -20,37 +19,23 @@ The data preprocessing consisted mainly in tokenizing, vectorizing and padding t
 
 The data was split into training, validation and test sets. <br> 
 
-*Decision tree classifier* <br>
+**Decision tree classifier** <br>
 
 Validation accuracy: 0.71 , f1-score:0.70 <br>
 
 Test accuracy: 0.71, f1-score:0.69 <br>
 
-*Deep learning model* <br>
+**Deep learning model** <br>
 
-_________________________________________________________________
-
-Layer (type)                 Output Shape              Param #   
-
-=================================================================
-
-embedding (Embedding)        (None, 100, 8)            176       
-
-_________________________________________________________________
-
-flatten (Flatten)            (None, 800)               0         
-
-_________________________________________________________________
-
-dense (Dense)                (None, 429)               343629    
-
-=================================================================
+Layers: Embedding, Flatten and Dense <br>
+Epochs: 15 <br>
+Batch size: 512 <br>
 
 ![loss](img/loss.png)
 ![accuracy](img/accuracy.png)
 
 
-*Test results* <br>
+**Test results** <br>
 
 Accuracy: 0.985751 <br>
 
