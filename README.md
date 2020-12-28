@@ -21,9 +21,9 @@ The data was split into training, validation and test sets. <br>
 
 **Decision tree classifier** <br>
 
-Validation accuracy: 0.71 , f1-score:0.70 <br>
+Validation accuracy: 0.71 , F1 score:0.70 <br>
 
-Test accuracy: 0.71, f1-score:0.69 <br>
+Test accuracy: 0.71, F1 score:0.69 <br>
 
 **Deep learning model** <br>
 
@@ -35,7 +35,7 @@ Batch size: 512 <br>
 ![accuracy](img/accuracy.png)
 
 
-**Test results** <br>
+Test results<br>
 
 Accuracy: 0.985751 <br>
 
