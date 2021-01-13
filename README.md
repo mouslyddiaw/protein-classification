@@ -1,7 +1,7 @@
 # Protein classifier: project overview
 This project aims at building a model that assigns amino acid sequences to their protein family. The [Pfam dataset](https://www.kaggle.com/googleai/pfam-seed-random-split) is used for this task. <br>
 
-I built a classifier that predicts to which family amongst the 429 most frequent protein families an amino acid sequence belongs. The classifier is a simple deep learning model with only 3 layers that yielded an accuracy of ~98% on the test set, which is better than the ~71% obtained with a decision tree classifier.  
+I built a classifier that predicts to which family amongst the 429 most frequent protein families an amino acid sequence belongs. The classifier is a simple deep learning model with only 3 layers that yielded an F1 score of ~98% on the test set, which is better than the ~70% obtained with a decision tree classifier.  
 
 ## Resources
 Python packages: Numpy, Pandas, Matplotlib, Sklearn, Keras<br>   
